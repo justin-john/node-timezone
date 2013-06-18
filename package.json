@@ -11,8 +11,10 @@
     ],
     "maintainers": "Justin John Mathews <justinjohnmathews@gmail.com>",
     "homepage": "https://github.com/justin-john/node-timezone",
+    "version": "0.0.4",
     "author": {
-        "name": "Justin John Mathews"
+        "name": "Justin John Mathews",
+        "email": "justinjohnmathews@gmail.com"
     },
     "contributors": [
         {
@@ -20,7 +22,14 @@
             "email": "justinjohnmathews@gmail.com"
         }
     ],
-    "version": "0.0.3",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/justin-john/node-timezone.git"
+    },
+    "bugs": {
+        "mail": "justinjohnmathews@gmail.com",
+        "url": "https://github.com/justin-john/node-timezone/issues"
+    },
     "main": "./lib/timezone",
     "dependencies": {},
     "devDependencies": {},
