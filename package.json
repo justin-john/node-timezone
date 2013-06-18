@@ -1,6 +1,14 @@
 {
     "name": "timezoner",
     "description": "Node.js client library for accessing Google Time Zone API.",
+    "keywords": [
+	    "timezone",
+	    "latitude",
+	    "longitude",
+	    "coordinates",
+	    "timezoner",
+	    "Google Time Zone API"
+    ],
     "maintainers": "Justin John Mathews <justinjohnmathews@gmail.com>",
     "homepage": "https://github.com/justin-john/node-timezone",
     "author": {
@@ -12,7 +20,7 @@
             "email": "justinjohnmathews@gmail.com"
         }
     ],
-    "version": "0.0.2",
+    "version": "0.0.3",
     "main": "./lib/timezone",
     "dependencies": {},
     "devDependencies": {},
