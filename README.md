@@ -1,7 +1,9 @@
 node-timezone
 =============
 
-Node.js client library for accessing [Google Time Zone API](https://developers.google.com/maps/documentation/timezone). It provides time offset data for locations on the surface of the earth. Requesting the time zone information for a specific Latitude/Longitude pair will return the name of that time zone, the time offset from UTC, and the Daylight Savings offset.
+Node.js client library for accessing [Google Time Zone API](https://developers.google.com/maps/documentation/timezone).
+It provides time offset data for locations on the surface of the earth.
+Requesting the time zone information for a specific Latitude/Longitude pair will return the name of that time zone, the time offset from UTC, and the Daylight Savings offset.
 
 ## Installation
 
@@ -13,21 +15,22 @@ $ npm install timezoner
 
 ```js
     var timezoner = require('timezoner');
-    timezoner.getTimeZone(
-                    39.6034810, // Latitude coordinate
-                    -119.6822510, // Longitude coordinate
-                    function (err, data) {
-                        if (err) {
-                            console.log(err);
-                        } else {
-                            console.log(data);
-                        }
-                    }
-                );
+	/* Request timezone with location coordinates */
+	timezoner.getTimeZone(
+		39.6034810, // Latitude coordinate
+		-119.6822510, // Longitude coordinate
+		function (err, data) {
+			if (err) {
+				console.log(err);
+			} else {
+				console.log(data);
+			}
+		}
+	);
 
 ```
 #####Response data:  
-    {
+	{
 	   "dstOffset" : 0.0,
 	   "rawOffset" : -28800.0,
 	   "status" : "OK",

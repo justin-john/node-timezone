@@ -12,7 +12,7 @@
     ],
     "maintainers": "Justin John Mathews <justinjohnmathews@gmail.com>",
     "homepage": "https://github.com/justin-john/node-timezone",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "author": {
         "name": "Justin John Mathews",
         "email": "justinjohnmathews@gmail.com"
@@ -38,5 +38,5 @@
         "node": "*"
     },
     "readme": "Node.js client library for accessing Google Time Zone API.",
-    "readmeFilename": "Readme.md"
+    "readmeFilename": "README.md"
 }
