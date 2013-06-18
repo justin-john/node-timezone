@@ -36,7 +36,5 @@
     "devDependencies": {},
     "engines": {
         "node": "*"
-    },
-    "readme": "Node.js client library for accessing Google Time Zone API.",
-    "readmeFilename": "README.md"
+    }
 }
