@@ -1,7 +1,7 @@
 node-timezone
 =============
 
-Node.js client library for accessing [Google Time Zone API](https://developers.google.com/maps/documentation/timezone).
+Node.js client library for accessing [Google Time Zone API](https://developers.google.com/maps/documentation/timezone). It provides time offset data for locations on the surface of the earth. Requesting the time zone information for a specific Latitude/Longitude pair will return the name of that time zone, the time offset from UTC, and the Daylight Savings offset.
 
 ## Installation
 
