@@ -27,7 +27,6 @@ $ npm install timezoner
 			}
 		}
 	);
-
 ```
 #####Response data:  
 	{
@@ -38,11 +37,28 @@ $ npm install timezoner
 	   "timeZoneName" : "Pacific Standard Time"
 	}
 
-More details can be found on docs of [Google TimeZone API](https://developers.google.com/maps/documentation/timezone).
+You can override the [sensor](https://developers.google.com/maps/documentation/timezone/#RequiredParam) parameter of Google Timezone API with adding an object as last parameter of `getTimezone` method. The **sensor** defaults to **false**.
+```js
+	timezoner.getTimeZone(
+		39.6034810,
+		-119.6822510,
+		function (err, data) {
+			if (err) {
+				console.log(err);
+			} else {
+				console.log(data);
+			}
+		},
+		{ sensor: true }
+	);
+```
+You can find more details about response and different status of response from [Time Zone Responses](https://developers.google.com/maps/documentation/timezone/#Responses).
 
 ## License
 
-(c) 2013 Justin John Mathews <justinjohnmathews@gmail.com>, MIT license.
+The MIT License (MIT)
+
+Copyright (c) 2013 Justin John Mathews <justinjohnmathews@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
