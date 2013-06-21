@@ -37,7 +37,7 @@ $ npm install timezoner
 	   "timeZoneName" : "Pacific Standard Time"
 	}
 
-You can override the [sensor](https://developers.google.com/maps/documentation/timezone/#RequiredParam) parameter of Google Timezone API with adding an object as last parameter of `getTimezone` method. The **sensor** defaults to **false**.
+You can override the [sensor](https://developers.google.com/maps/documentation/timezone/#RequiredParam) parameter of Google Timezone API with adding an object as last parameter of `getTimeZone` method. The **sensor** defaults to **false**.
 ```js
 	timezoner.getTimeZone(
 		39.6034810,
