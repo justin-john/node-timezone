@@ -37,7 +37,7 @@ $ npm install timezoner
 	   "timeZoneName" : "Pacific Standard Time"
 	}
 
-You can override the [sensor](https://developers.google.com/maps/documentation/timezone/#RequiredParam) parameter of Google Timezone API with adding an object as last parameter of `getTimeZone` method. The `sensor` defaults to `false`. 
+You can pass in an optional options as a last argument, it can be useful for override [sensor](https://developers.google.com/maps/documentation/timezone/#RequiredParam) parameter of Google Timezone API. The `sensor` defaults to `false`. 
 ```js
 	timezoner.getTimeZone(
 		39.6034810,
@@ -52,7 +52,8 @@ You can override the [sensor](https://developers.google.com/maps/documentation/t
 		{ sensor: true }
 	);
 ```
-The `sensor` parameter specifies whether the application requesting data is using a sensor (such as a GPS device) to determine the user's location. Accepts true or false.
+The `sensor` parameter specifies whether the application requesting data is using a sensor (such as a GPS device) to determine the user's location. It accepts true or false.
+
 You can find more details about response and different status of response from [Time Zone Responses](https://developers.google.com/maps/documentation/timezone/#Responses).
 
 ## License
