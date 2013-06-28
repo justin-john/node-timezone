@@ -1,5 +1,7 @@
 node-timezone
 =============
+[![build status](https://secure.travis-ci.org/justin-john/node-timezone.png)](http://travis-ci.org/justin-john/node-timezone)
+
 
 Node.js client library for accessing [Google Time Zone API](https://developers.google.com/maps/documentation/timezone).
 It provides time offset data for locations on the surface of the earth.
@@ -37,7 +39,7 @@ $ npm install timezoner
 	   "timeZoneName" : "Pacific Standard Time"
 	}
 
-You can pass in an optional options as a last argument, it can be useful for override [sensor](https://developers.google.com/maps/documentation/timezone/#RequiredParam) parameter of Google Timezone API. The `sensor` defaults to `false`. 
+You can pass in an optional options as a last argument, it can be useful for override [sensor](https://developers.google.com/maps/documentation/timezone/#RequiredParam) of Google Timezone API. The `sensor` defaults to `false`. 
 ```js
 	timezoner.getTimeZone(
 		39.6034810,
@@ -52,7 +54,7 @@ You can pass in an optional options as a last argument, it can be useful for ove
 		{ sensor: true }
 	);
 ```
-The `sensor` parameter specifies whether the application requesting data is using a sensor (such as a GPS device) to determine the user's location. It accepts true or false.
+The `sensor` specifies whether the application requesting data is using a sensor (such as a GPS device) to determine the user's location. It accepts true or false.
 
 You can find more details about response and different status of response from [Time Zone Responses](https://developers.google.com/maps/documentation/timezone/#Responses).
 
