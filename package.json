@@ -12,7 +12,7 @@
     ],
     "maintainers": "Justin John Mathews <justinjohnmathews@gmail.com>",
     "homepage": "https://github.com/justin-john/node-timezone",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "author": {
         "name": "Justin John Mathews",
         "email": "justinjohnmathews@gmail.com"
