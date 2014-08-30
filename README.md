@@ -39,7 +39,8 @@ $ npm install timezoner
 	   "timeZoneName" : "Pacific Standard Time"
 	}
 
-You can pass in an optional options as a last argument, it can be useful for override [sensor](https://developers.google.com/maps/documentation/timezone/#RequiredParam) of Google Timezone API. The `sensor` defaults to `false`. 
+You can pass in an optional options as a last argument, it can be useful to pass [Optional Parameters](https://developers.google.com/maps/documentation/timezone/#OptionalParam) like `key` and `language`.
+The `language` parameter is used to the language in which to return results and `key` parameter is the API Key which identifies your application for purposes of quota management. Please see [API Key](https://developers.google.com/maps/documentation/timezone/#api_key) to know more about `key` parameter.
 ```js
 	timezoner.getTimeZone(
 		39.6034810,
@@ -51,18 +52,32 @@ You can pass in an optional options as a last argument, it can be useful for ove
 				console.log(data);
 			}
 		},
-		{ sensor: true }
+		{ language: 'es', key: 'YOUR_API_KEY' }
 	);
 ```
-The `sensor` specifies whether the application requesting data is using a sensor (such as a GPS device) to determine the user's location. It accepts true or false.
+
+The response will now be localized to Spanish.
+
+    {
+       "dstOffset" : 3600.0,
+       "rawOffset" : -28800.0,
+       "status" : "OK",
+       "timeZoneId" : "America/Los_Angeles",
+       "timeZoneName" : "Hora de verano del Pacífico"
+    }
 
 You can find more details about response and different status of response from [Time Zone Responses](https://developers.google.com/maps/documentation/timezone/#Responses).
+
+## Notes
+
+Removed the `sensor` parameter in options. It is no longer required by Google Time Zone API.
+
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Justin John Mathews <justinjohnmathews@gmail.com>
+Copyright (c) 2013-2014 Justin John Mathews <justinjohnmathews@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
