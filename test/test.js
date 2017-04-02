@@ -18,7 +18,7 @@ timezoner.getTimeZone(
         assert.ok(data);
         assert.equal(data.status, 'OK');
         assert.equal(data.timeZoneId, 'America/Los_Angeles');
-        assert.equal(data.timeZoneName, 'Hora de verano del Pacífico');
+        assert.equal(data.timeZoneName, 'hora de verano del Pacífico');
     },
     { language: 'es' }
 );

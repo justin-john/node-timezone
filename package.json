@@ -32,6 +32,9 @@
         "url": "https://github.com/justin-john/node-timezone/issues"
     },
     "main": "./lib/timezone",
+    "scripts": {
+        "test": "node ./test/test"
+    },
     "dependencies": {},
     "devDependencies": {},
     "engines": {
