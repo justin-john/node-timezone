@@ -12,13 +12,13 @@ timezoner.getTimeZone(
 );
 /* Results will return in SPANISH */
 timezoner.getTimeZone(
-    39.6034810,
-    -119.6822510,
+    9.9312,
+    76.2673,
     function (err, data) {
         assert.ok(data);
         assert.equal(data.status, 'OK');
-        assert.equal(data.timeZoneId, 'America/Los_Angeles');
-        assert.equal(data.timeZoneName, 'hora de verano del Pacífico');
+        assert.equal(data.timeZoneId, 'Asia/Calcutta');
+        assert.equal(data.timeZoneName, 'hora estándar de la India');
     },
     { language: 'es' }
 );
